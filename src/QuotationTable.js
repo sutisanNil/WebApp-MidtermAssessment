@@ -18,7 +18,7 @@ function QuotationTable({ data, setDataItems }) {
     let sumDiscount = 0;
     const z = data.map((v, i) => {
       let amount = (v.qty * v.ppu) - v.disc;
-      sumDiscount += (v.disc*1);
+      sumDiscount += v.disc * 1;
       sum += amount;
       return (
         <tr key={i}>
